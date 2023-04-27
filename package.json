@@ -1,0 +1,26 @@
+{
+  "name": "hireandseek",
+  "version": "1.0.0",
+  "description": "Job seeking platform",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Vardan29/hire-and-seek.git"
+  },
+  "keywords": [
+    "job",
+    "hire",
+    "work",
+    "freelance",
+    "candidate"
+  ],
+  "author": "Vardan Petrosyan <vardan.petrosyan29@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Vardan29/hire-and-seek/issues"
+  },
+  "homepage": "https://github.com/Vardan29/hire-and-seek#readme"
+}
