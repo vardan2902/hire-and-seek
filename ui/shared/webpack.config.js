@@ -7,10 +7,11 @@ const PLUGINS = [
             name: 'SharedUI',
             filename: 'entry.js',
             exposes: {
-                './button': './src/ui/button/bootstrap.tsx'
+                './Button': './src/ui/button/index.tsx'
             },
             shared: [
-                'react'
+                'react',
+                'styled-components'
             ]
         }
     ),

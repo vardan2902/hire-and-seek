@@ -14,7 +14,8 @@ const PLUGINS = [
             },
             shared: [
                 'react',
-                'SharedUI'
+                'SharedUI',
+                'styled-components'
             ]
         }
     ),

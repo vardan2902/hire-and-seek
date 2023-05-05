@@ -1,9 +1,10 @@
 import React from 'react';
+import StyledButton from "./styled.button";
 
 const Button = () => {
-    return <button>
+    return <StyledButton>
         Submit
-    </button>
+    </StyledButton>
 };
 
 export default Button;
