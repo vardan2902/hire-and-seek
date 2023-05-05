@@ -1,0 +1,12 @@
+{
+  "name": "ui",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "serve:all": "find . -type f -name 'package.json' -not -path '*/node_modules/*' -prune -mindepth 2 -execdir pm2 start npm --name $PWD -- start \\;"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

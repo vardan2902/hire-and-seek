@@ -1,0 +1,11 @@
+{
+  "allowImportingTsExtensions": true,
+  "compilerOptions": {
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "target": "es5",
+    "jsx": "react"
+  },
+  "exclude": ["node_modules"]
+}

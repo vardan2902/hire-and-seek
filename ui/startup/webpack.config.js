@@ -11,8 +11,13 @@ const PLUGINS = [
             name: 'HireAndSeek',
             filename: 'consumer.js',
             remotes: {
-                SharedUI: 'SharedUI@http://localhost:3001/entry.js'
-            }
+                SharedUI: 'SharedUI@http://localhost:3001/entry.js',
+                Home: 'Home@http://localhost:3002/entry.js'
+            },
+            shared: [
+                'react',
+                'SharedUI'
+            ]
         }
     ),
 ];
@@ -45,7 +50,7 @@ module.exports = {
         extensions: ['.js', '.jsx', '.ts', '.tsx']
     },
     entry: {
-        index: path.resolve(__dirname, 'src', 'index.tsx')
+        index: path.resolve(__dirname, 'src', 'index.ts')
     },
     output: {
         path: path.resolve(__dirname, 'dist'),

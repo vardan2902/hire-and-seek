@@ -1,11 +1,9 @@
 import React from 'react';
-import Button from './ui/button';
 
 const App = () => {
     return (
         <div>
-            <h1>Hello to UI lib</h1>
-            <Button/>
+            <h1>Hello to HomePage</h1>
         </div>
     );
 };

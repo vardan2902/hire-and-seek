@@ -3,9 +3,6 @@
   "version": "1.0.0",
   "description": "Job seeking platform",
   "main": "index.js",
-  "scripts": {
-    "test": "test"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Vardan29/hire-and-seek.git"

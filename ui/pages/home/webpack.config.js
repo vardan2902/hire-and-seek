@@ -4,13 +4,17 @@ const ModuleFederationPlugin = require('webpack/lib/container/ModuleFederationPl
 const PLUGINS = [
     new ModuleFederationPlugin(
         {
-            name: 'SharedUI',
+            name: 'Home',
             filename: 'entry.js',
             exposes: {
-                './button': './src/ui/button/bootstrap.tsx'
+                '.': './src/App.tsx'
+            },
+            remotes: {
+                SharedUI: 'SharedUI@http://localhost:3001/entry.js',
             },
             shared: [
-                'react'
+                'react',
+                'SharedUI'
             ]
         }
     ),
@@ -53,7 +57,7 @@ module.exports = {
     devServer: {
         hot: true,
         open: true,
-        port: 3001,
+        port: 3002,
         historyApiFallback: true
     },
     plugins: PLUGINS,

@@ -1,16 +1,9 @@
 import React from 'react';
-
-// @ts-ignore
-const Button = React.lazy(() => import('SharedUI/ui-button'));
+import Router from "./router";
 
 const App = () => {
     return (
-        <div className={'container'}>
-            Hello Hire And Seek
-            <React.Suspense fallback={'Loading Button...'}>
-                <Button/>
-            </React.Suspense>
-        </div>
+        <Router/>
     );
 };
 
