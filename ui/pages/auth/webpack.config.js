@@ -1,19 +1,17 @@
 const path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ModuleFederationPlugin = require('webpack/lib/container/ModuleFederationPlugin');
 
 const PLUGINS = [
-    new HtmlWebpackPlugin({
-        template: path.resolve(__dirname, 'src', 'static', 'index.html')
-    }),
     new ModuleFederationPlugin(
         {
-            name: 'HireAndSeek',
-            filename: 'consumer.js',
+            name: 'Auth',
+            filename: 'entry.js',
+            exposes: {
+                './Login': './src/login/index.tsx',
+                './Register': './src/register/index.tsx',
+            },
             remotes: {
                 SharedUI: 'SharedUI@http://localhost:3001/entry.js',
-                Home: 'Home@http://localhost:3002/entry.js',
-                Auth: 'Auth@http://localhost:3003/entry.js'
             },
             shared: [
                 'react',
@@ -60,7 +58,7 @@ module.exports = {
     devServer: {
         hot: true,
         open: true,
-        port: 3000,
+        port: 3003,
         historyApiFallback: true
     },
     plugins: PLUGINS,
