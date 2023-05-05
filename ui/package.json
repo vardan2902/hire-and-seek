@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "serve:all": "find . -type f -name 'package.json' -not -path '*/node_modules/*' -prune -mindepth 2 -execdir pm2 start npm --name $PWD -- start \\;"
+    "serve:all": "find . -type f -name 'package.json' -not -path '*/node_modules/*' -prune -mindepth 2 -execdir pm2 start npm --name $PWD -- start \\;",
+    "stop:all": "pm2 stop $PWD",
+    "delete:all": "pm2 delete $PWD",
+    "destruct:all": "pm2 stop $PWD; pm2 delete $PWD"
   },
   "keywords": [],
   "author": "",
