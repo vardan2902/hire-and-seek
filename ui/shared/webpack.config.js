@@ -7,7 +7,9 @@ const PLUGINS = [
             name: 'SharedUI',
             filename: 'entry.js',
             exposes: {
-                './Button': './src/ui/button/index.tsx'
+                './Button': './src/ui/button/index.tsx',
+                './StyledComponents': './src/styled/index.ts',
+                './LabeledInput': './src/ui/labeled-input/index.tsx'
             },
             shared: [
                 'react',

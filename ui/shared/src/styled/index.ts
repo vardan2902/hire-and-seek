@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export default styled.button`
+export const StyledButton = styled.button`
   padding: 5px 10px;
   display: flex;
   justify-content: center;
@@ -11,3 +11,9 @@ export default styled.button`
   border: 2px solid blue;
   font-size: 18px;
 `;
+
+export const StyledLabel = styled.label``;
+
+export const StyledInput = styled.input``;
+
+export const StyledLabeledInputContainer = styled.div``;
